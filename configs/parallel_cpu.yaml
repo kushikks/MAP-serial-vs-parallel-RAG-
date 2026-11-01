@@ -1,0 +1,8 @@
+name: parallel_cpu
+device: cpu
+backend: faiss_cpu
+workers: 4
+threads: 4
+batch_size: 32
+loader_workers: 0
+max_length: 256

@@ -1,0 +1,28 @@
+[
+  {
+    "trial": 1,
+    "dataset_loading_s": 0.08968010009266436,
+    "preprocessing_s": 0.0004740001168102026,
+    "claim_loading_s": 0.0035864999517798424,
+    "document_embedding_s": 11.240163299953565,
+    "index_build_s": 9.770016185939312e-05,
+    "claim_embedding_s": 0.31949469982646406,
+    "search_s": 0.000703300116583705,
+    "end_to_end_s": 11.657542300177738,
+    "documents": 64,
+    "queries": 12,
+    "document_throughput_per_s": 5.693867454778383,
+    "online_batched_total_s": 0.32019799994304776,
+    "index_bytes": 98349,
+    "gpu_peak_allocated_bytes": 0,
+    "gpu_peak_reserved_bytes": 0,
+    "batched_queries_per_s": 37.47681122972158,
+    "batched_amortized_latency_s": 0.026683166661920648,
+    "single_latency_mean_s": 0.02643686664911608,
+    "single_latency_median_s": 0.024247399996966124,
+    "single_latency_p95_s": 0.03176843016408384,
+    "single_queries_per_s": 37.82596528070149,
+    "peak_process_tree_rss_bytes": 1002086400,
+    "effective_batch_size": 1
+  }
+]

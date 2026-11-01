@@ -1,0 +1,29 @@
+{
+  "dataset": "allenai/scifact",
+  "hf_revision": "1fe54665deee011033b2dd98db5752e0d586fdfb",
+  "hf_config_version": "1.0.0",
+  "source": "https://scifact.s3-us-west-2.amazonaws.com/release/latest/data.tar.gz",
+  "download_utc": "2026-11-01T03:04:51.765608+00:00",
+  "loader": "official JSONL source used by inspected HF legacy script",
+  "configurations": {
+    "corpus": [
+      "train"
+    ],
+    "claims": [
+      "train",
+      "validation",
+      "test"
+    ]
+  },
+  "sha256": {
+    "corpus.jsonl": "b8d6c89624cb2ed74dee8938effc4f5d8bd2086887880af8110d64be4ceade62",
+    "claims_train.jsonl": "f4c8fa82d8bd0653a9cc8d61a6ea48c25eacea64e90af5dbf390ebb1b74372f0",
+    "claims_dev.jsonl": "86f0435d08fdb65d1aa41d1472684f57e6e71930626497bdf4d7a9ec1a632217",
+    "claims_test.jsonl": "558930d75215c73f84a28fe538307d6d397c9de1ec7239514cf45f80d75d2ca3",
+    "data.tar.gz": "11c621288d41ac144d29b13b0f8503b3820b7d6e8b1f6ff24dff335c196d76be",
+    "scifact.py": "84aef0b1137f9e26f999073ccef155f5ce9def5ff21f8ae97f06bde3167644bc",
+    "dataset_infos.json": "91bc98f534dd6f056a3a22a558fda7869c8f1f3c18c6e028f91dd4248feff119",
+    "hf_repository.json": "28538f43c9d3be4d4abde7d2ec00654fa1785bbe201b4736695b517e776fc855",
+    "README.md": "09ab2b461269f40268645432363df00242f6a52e9df67995bf1ee2e2eeba3a36"
+  }
+}

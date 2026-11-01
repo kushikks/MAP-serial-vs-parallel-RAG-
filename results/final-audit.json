@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "primary_configurations": 8,
+  "primary_warm_trials": 40,
+  "scalability_warm_trials": 10,
+  "pytest_passed": 27,
+  "figures_png_pdf_pairs": 13,
+  "shared_model_and_dataset_fingerprints": true,
+  "all_saved_artifact_and_cache_checksums_verified": true,
+  "all_primary_effectiveness_metrics_identical": true,
+  "isolated_search_parity_rows": 60,
+  "diagnostic_profiles": 2,
+  "repeated_workload_excluded_from_quality": true
+}

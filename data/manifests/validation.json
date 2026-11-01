@@ -1,0 +1,50 @@
+{
+  "valid": true,
+  "documents": 5183,
+  "splits": {
+    "train": {
+      "claims": 809,
+      "with_evidence": 505,
+      "without_evidence": 304
+    },
+    "dev": {
+      "claims": 300,
+      "with_evidence": 188,
+      "without_evidence": 112
+    },
+    "test": {
+      "claims": 300,
+      "with_evidence": 0,
+      "without_evidence": 300
+    }
+  },
+  "structured_abstracts": 977,
+  "sentence_count": 45952,
+  "raw_schema": {
+    "corpus": [
+      "doc_id",
+      "title",
+      "abstract",
+      "structured"
+    ],
+    "train": [
+      "id",
+      "claim",
+      "evidence",
+      "cited_doc_ids"
+    ],
+    "dev": [
+      "id",
+      "claim",
+      "evidence",
+      "cited_doc_ids"
+    ],
+    "test": [
+      "id",
+      "claim"
+    ]
+  },
+  "missing_archival_api_snapshot": false,
+  "test_annotation_status": "Unreleased/unknown; evidence counts describe available annotations, not confirmed absence",
+  "policy": "Fail explicitly on malformed records; no silent dropping. Test labels never evaluated."
+}

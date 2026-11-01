@@ -1,0 +1,12 @@
+{
+  "dataset_loading_s": 0.2087675000075251,
+  "preprocessing_s": 0.022245199885219336,
+  "claim_loading_s": 0.0025384000036865473,
+  "document_embedding_s": 1.3171067000366747,
+  "index_build_s": 0.00035619991831481457,
+  "claim_embedding_s": 0.041754200123250484,
+  "search_s": 0.004103600047528744,
+  "end_to_end_s": 1.6033024000935256,
+  "model_loading_s": 29.787569999927655,
+  "cold_total_s": 31.39087240002118
+}

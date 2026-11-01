@@ -1,0 +1,18 @@
+# Experiment protocol
+
+1. Verify hardware and actual CUDA tensor computation with `retrieval.py hardware`. Check AC power and close unrelated heavy workloads. Do not modify drivers, torch or global Python.
+2. Run `prepare`, `download-model`, unit tests, and a real-data smoke run using a distinct `--name`.
+3. Run the full serial baseline first. It saves reference vectors, mappings, claims and checksummed metadata under `artifacts/serial_cpu`.
+4. Run CPU two-thread/two-preprocessing-worker and four-thread/four-worker configurations. Both use batch 32. Numerical kernels provide real parallel computation. Compare output parity before performance.
+5. Run CUDA batch 64 with four DataLoader workers to measure the requested default. Compare with zero workers; then sweep zero-worker batches 16/32/64. Run PyTorch CUDA exact search separately at batch 64. Each process has a first-use run and five rebuilt warm trials. No experiments run concurrently.
+6. Generate summary CSV/JSON and PNG/PDF figures. Preserve all raw data. Treat development effectiveness as evaluation of the prespecified model; do not tune semantic settings on it. Batch/thread choices affect performance and retain the same semantic settings.
+
+For isolated search comparisons, run `retrieval.py benchmark-search --threads 1 --trials 5` and repeat with `--threads 4`. Both backends use the exact saved serial document and claim vectors. Each backend builds its index once, warms search, then repeats search with query batches of 1, 32 and all 300 claims. Index-build time in that diagnostic is a single observation, repeated as context in its raw rows; search statistics use five independently timed searches. Primary index-build statistics come from the rebuilt pipeline trials, which construct an index each time.
+
+Use `benchmark --profile` with a separate diagnostic name and small `--limit` to save both whole-command cProfile output and an additional warmed document-embedding profile under `results/profiles`. The latter excludes model construction and records actual document IDs, normalization, effective settings and profiling overhead. Python profiles do not resolve asynchronous CUDA kernel internals; synchronized stage timings remain the primary GPU wall-clock measurements. Profiled subset runs are diagnostics, not full-corpus performance comparisons.
+
+The exact executed matrix is in `scripts/run_experiments.py`. A run name is an output identity; reusing a name replaces its prior records. Use a new name for independent sessions. Five repeats are a minimum; variance, throttling and order effects may require additional sessions. No full publication-level claim is justified solely by the convenience matrix on one laptop.
+
+Run metadata is saved before model loading, and completed trials are written individually. New runs remain marked `incomplete` until every requested trial finishes; interrupted runs retain context and partial measurements but are excluded from complete-run summaries. Earlier completed runs without a status field are treated as complete.
+
+Scalability commands, e.g. `benchmark --config configs/parallel_gpu.yaml --loader-workers 0 --repeat-documents 2 --name repeat2`, explicitly repeat documents and disable effectiveness evaluation. Unique-document subset sizes can be tested with `--limit`, but their retrieval quality is not comparable to the full corpus. No synthetic inputs are used in measured default experiments. Offline corpus scaling and online query-count scaling can be studied independently using `--limit` and `--queries`; repeated claims are not independent effectiveness observations.

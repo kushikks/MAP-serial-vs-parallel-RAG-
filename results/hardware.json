@@ -1,0 +1,31 @@
+{
+  "os": "Windows-10-10.0.26200-SP0",
+  "cpu": "13th Gen Intel(R) Core(TM) i9-13900H",
+  "physical_cores": 14,
+  "logical_cores": 20,
+  "ram_total_bytes": 16780304384,
+  "ram_available_bytes": 2624299008,
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "python_executable": "C:\\Users\\Kushi KKS\\MAP\\.venv-rag\\Scripts\\python.exe",
+  "packages": {
+    "torch": "2.11.0+cu128",
+    "sentence-transformers": "6.2.0",
+    "transformers": "5.22.1",
+    "faiss-cpu": "1.15.1",
+    "numpy": "2.4.6",
+    "psutil": "7.2.2",
+    "scipy": "1.17.1",
+    "tokenizers": "0.23.3",
+    "huggingface-hub": "2.4.0"
+  },
+  "cuda_runtime": "12.8",
+  "cuda_available": true,
+  "nvidia_smi": "name, driver_version, memory.total [MiB], temperature.gpu, utilization.gpu [%], power.draw [W]\nNVIDIA GeForce RTX 4050 Laptop GPU, 581.80, 6141 MiB, 73, 0 %, 2.46 W",
+  "ac_power": true,
+  "git_commit": null,
+  "faiss_gpu_api_available": false,
+  "faiss_compile_options": "",
+  "gpu": "NVIDIA GeForce RTX 4050 Laptop GPU",
+  "vram_bytes": 6438780928,
+  "cuda_computation_sum": 499500
+}

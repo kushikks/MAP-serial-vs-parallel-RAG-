@@ -1,0 +1,45 @@
+[
+  {
+    "doc_id": "29638116",
+    "title": "Complex Tissue and Disease Modeling using hiPSCs.",
+    "abstract": "Defined genetic models based on human pluripotent stem cells have opened new avenues for understanding disease mechanisms and drug screening. Many of these models assume cell-autonomous mechanisms of disease but it is possible that disease phenotypes or drug responses will only be evident if all cellular and extracellular components of a tissue are present and functionally mature. To derive optimal benefit from such models, complex multicellular structures with vascular components that mimic tissue niches will thus likely be necessary. Here we consider emerging research creating human tissue mimics and provide some recommendations for moving the field forward.",
+    "abstract_sentences": [
+      "Defined genetic models based on human pluripotent stem cells have opened new avenues for understanding disease mechanisms and drug screening.",
+      "Many of these models assume cell-autonomous mechanisms of disease but it is possible that disease phenotypes or drug responses will only be evident if all cellular and extracellular components of a tissue are present and functionally mature.",
+      "To derive optimal benefit from such models, complex multicellular structures with vascular components that mimic tissue niches will thus likely be necessary.",
+      "Here we consider emerging research creating human tissue mimics and provide some recommendations for moving the field forward."
+    ],
+    "retrieval_score": 0.3540133535861969,
+    "rank": 1
+  },
+  {
+    "doc_id": "4346436",
+    "title": "Nonlinear Elasticity in Biological Gels",
+    "abstract": "Unlike most synthetic materials, biological materials often stiffen as they are deformed. This nonlinear elastic response, critical for the physiological function of some tissues, has been documented since at least the 19th century, but the molecular structure and the design principles responsible for it are unknown. Current models for this response require geometrically complex ordered structures unique to each material. In this Article we show that a much simpler molecular theory accounts for strain stiffening in a wide range of molecularly distinct biopolymer gels formed from purified cytoskeletal and extracellular proteins. This theory shows that systems of semi-flexible chains such as filamentous proteins arranged in an open crosslinked meshwork invariably stiffen at low strains without the need for a specific architecture or multiple elements with different intrinsic stiffnesses.",
+    "abstract_sentences": [
+      "Unlike most synthetic materials, biological materials often stiffen as they are deformed.",
+      "This nonlinear elastic response, critical for the physiological function of some tissues, has been documented since at least the 19th century, but the molecular structure and the design principles responsible for it are unknown.",
+      "Current models for this response require geometrically complex ordered structures unique to each material.",
+      "In this Article we show that a much simpler molecular theory accounts for strain stiffening in a wide range of molecularly distinct biopolymer gels formed from purified cytoskeletal and extracellular proteins.",
+      "This theory shows that systems of semi-flexible chains such as filamentous proteins arranged in an open crosslinked meshwork invariably stiffen at low strains without the need for a specific architecture or multiple elements with different intrinsic stiffnesses."
+    ],
+    "retrieval_score": 0.3306141495704651,
+    "rank": 2
+  },
+  {
+    "doc_id": "3874000",
+    "title": "Tissue Mechanics Orchestrate Wnt-Dependent Human Embryonic Stem Cell Differentiation.",
+    "abstract": "Regenerative medicine is predicated on understanding the mechanisms regulating development and applying these conditions to direct stem cell fate. Embryogenesis is guided by cell-cell and cell-matrix interactions, but it is unclear how these physical cues influence stem cells in culture. We used human embryonic stem cells (hESCs) to examine whether mechanical features of the extracellular microenvironment could differentially modulate mesoderm specification. We found that, on a hydrogel-based compliant matrix, hESCs accumulate β-catenin at cell-cell adhesions and show enhanced Wnt-dependent mesoderm differentiation. Mechanistically, Src-driven ubiquitination of E-cadherin by Cbl-like ubiquitin ligase releases P120-catenin to facilitate transcriptional activity of β-catenin, which initiates and reinforces mesoderm differentiation. By contrast, on a stiff hydrogel matrix, hESCs show elevated integrin-dependent GSK3 and Src activity that promotes β-catenin degradation and inhibits differentiation. Thus, we found that mechanical features of the microenvironmental matrix influence tissue-specific differentiation of hESCs by altering the cellular response to morphogens.",
+    "abstract_sentences": [
+      "Regenerative medicine is predicated on understanding the mechanisms regulating development and applying these conditions to direct stem cell fate.",
+      "Embryogenesis is guided by cell-cell and cell-matrix interactions, but it is unclear how these physical cues influence stem cells in culture.",
+      "We used human embryonic stem cells (hESCs) to examine whether mechanical features of the extracellular microenvironment could differentially modulate mesoderm specification.",
+      "We found that, on a hydrogel-based compliant matrix, hESCs accumulate β-catenin at cell-cell adhesions and show enhanced Wnt-dependent mesoderm differentiation.",
+      "Mechanistically, Src-driven ubiquitination of E-cadherin by Cbl-like ubiquitin ligase releases P120-catenin to facilitate transcriptional activity of β-catenin, which initiates and reinforces mesoderm differentiation.",
+      "By contrast, on a stiff hydrogel matrix, hESCs show elevated integrin-dependent GSK3 and Src activity that promotes β-catenin degradation and inhibits differentiation.",
+      "Thus, we found that mechanical features of the microenvironmental matrix influence tissue-specific differentiation of hESCs by altering the cellular response to morphogens."
+    ],
+    "retrieval_score": 0.2921808958053589,
+    "rank": 3
+  }
+]

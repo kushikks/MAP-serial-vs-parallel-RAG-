@@ -1,0 +1,8 @@
+name: serial_cpu
+device: cpu
+backend: faiss_cpu
+workers: 1
+threads: 1
+batch_size: 1
+loader_workers: 0
+max_length: 256

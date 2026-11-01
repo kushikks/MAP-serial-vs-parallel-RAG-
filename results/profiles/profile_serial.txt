@@ -1,0 +1,58 @@
+         9797106 function calls (9438174 primitive calls) in 74.447 seconds
+
+   Ordered by: cumulative time
+   List reduced from 13109 to 50 due to restriction <50>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.011    0.011   74.491   74.491 C:\Users\Kushi KKS\MAP\src\benchmarking.py:94(benchmark)
+       21    0.000    0.000   54.378    2.589 C:\Users\Kushi KKS\MAP\src\benchmarking.py:24(timed)
+  5831/15    0.068    0.000   36.808    2.454 <frozen importlib._bootstrap>:1165(_find_and_load)
+  2724/13    0.045    0.000   36.805    2.831 <frozen importlib._bootstrap>:1120(_find_and_load_unlocked)
+  2624/14    0.035    0.000   36.782    2.627 <frozen importlib._bootstrap>:666(_load_unlocked)
+  2493/10    0.024    0.000   36.781    3.678 <frozen importlib._bootstrap_external>:934(exec_module)
+  5974/21    0.013    0.000   36.702    1.748 <frozen importlib._bootstrap>:233(_call_with_frames_removed)
+  5212/10    0.638    0.000   36.697    3.670 {built-in method builtins.exec}
+   511/36    0.005    0.000   35.889    0.997 {built-in method builtins.__import__}
+        9    0.000    0.000   32.555    3.617 C:\Users\Kushi KKS\MAP\src\embeddings.py:77(encode)
+        9    0.014    0.002   32.554    3.617 C:\Users\Kushi KKS\MAP\src\embeddings.py:92(_encode)
+21808/188    0.094    0.000   31.867    0.170 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\torch\nn\modules\module.py:1775(_wrapped_call_impl)
+21808/188    0.171    0.000   31.866    0.169 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\torch\nn\modules\module.py:1783(_call_impl)
+      188    0.008    0.000   31.863    0.169 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\sentence_transformers\base\model.py:585(forward)
+      188    0.008    0.000   31.735    0.169 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\sentence_transformers\base\modules\transformer.py:1591(forward)
+      188    0.006    0.000   31.714    0.169 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\transformers\utils\generic.py:1019(wrapper)
+      188    0.008    0.000   31.696    0.169 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\transformers\utils\output_capturing.py:250(wrapper)
+      188    0.008    0.000   31.669    0.168 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\transformers\models\bert\modeling_bert.py:620(forward)
+      188    0.018    0.000   31.284    0.166 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\transformers\models\bert\modeling_bert.py:425(forward)
+     1128    0.010    0.000   31.222    0.028 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\transformers\modeling_layers.py:82(__call__)
+     1128    0.019    0.000   31.192    0.028 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\transformers\models\bert\modeling_bert.py:374(forward)
+3677/1524    0.018    0.000   29.596    0.019 <frozen importlib._bootstrap>:1207(_handle_fromlist)
+        1    0.000    0.000   27.928   27.928 C:\Users\Kushi KKS\MAP\src\benchmarking.py:120(<lambda>)
+        1    0.000    0.000   27.928   27.928 C:\Users\Kushi KKS\MAP\src\embeddings.py:46(__init__)
+        1    0.000    0.000   26.537   26.537 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\sentence_transformers\__init__.py:1(<module>)
+        2    0.011    0.006   26.370   13.185 C:\Users\Kushi KKS\MAP\src\benchmarking.py:32(pipeline)
+        2    0.000    0.000   25.315   12.658 C:\Users\Kushi KKS\MAP\src\benchmarking.py:40(<lambda>)
+     6956    0.051    0.000   23.800    0.003 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\torch\nn\modules\linear.py:130(forward)
+     6956   23.733    0.003   23.733    0.003 {built-in method torch._C._nn.linear}
+     1128    0.020    0.000   17.443    0.015 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\transformers\pytorch_utils.py:124(apply_chunking_to_forward)
+     1128    0.017    0.000   17.199    0.015 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\transformers\models\bert\modeling_bert.py:413(feed_forward_chunk)
+ 3189/215    0.006    0.000   16.202    0.075 C:\Users\Kushi KKS\AppData\Local\Programs\Python\Python311\Lib\importlib\__init__.py:108(import_module)
+ 3210/215    0.006    0.000   16.201    0.075 <frozen importlib._bootstrap>:1192(_gcd_import)
+76786/59128    0.079    0.000   16.057    0.000 {built-in method builtins.hasattr}
+        1    0.000    0.000   14.303   14.303 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\sentence_transformers\base\__init__.py:1(<module>)
+   109/72    0.001    0.000   14.265    0.198 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\transformers\utils\import_utils.py:2560(__getattr__)
+    85/61    0.000    0.000   14.265    0.234 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\transformers\utils\import_utils.py:2840(_get_module)
+        1    0.000    0.000   14.027   14.027 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\sentence_transformers\base\model.py:1(<module>)
+     1128    0.023    0.000   13.713    0.012 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\transformers\models\bert\modeling_bert.py:304(forward)
+     2402    0.040    0.000   12.919    0.005 <frozen ntpath>:674(realpath)
+        1    0.001    0.001   12.550   12.550 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\transformers\modeling_utils.py:1(<module>)
+       16    0.001    0.000   12.390    0.774 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\torch\library.py:180(_register_fake)
+       24    0.001    0.000   12.380    0.516 C:\Users\Kushi KKS\AppData\Local\Programs\Python\Python311\Lib\inspect.py:1051(findsource)
+       16    0.000    0.000   12.377    0.774 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\torch\_library\utils.py:36(get_source)
+       16    0.001    0.000   12.377    0.774 C:\Users\Kushi KKS\AppData\Local\Programs\Python\Python311\Lib\inspect.py:1658(getframeinfo)
+       40    0.058    0.001   12.358    0.309 C:\Users\Kushi KKS\AppData\Local\Programs\Python\Python311\Lib\inspect.py:969(getmodule)
+     2402    0.218    0.000   12.159    0.005 <frozen ntpath>:625(_getfinalpathname_nonstrict)
+        1    0.000    0.000   11.600   11.600 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\sentence_transformers\backend\__init__.py:1(<module>)
+        2    0.000    0.000   11.457    5.728 C:\Users\Kushi KKS\MAP\src\runtime.py:17(configure)
+     1128    0.105    0.000   11.063    0.010 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\transformers\models\bert\modeling_bert.py:164(forward)
+
+

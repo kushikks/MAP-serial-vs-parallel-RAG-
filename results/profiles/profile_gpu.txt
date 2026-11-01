@@ -1,0 +1,58 @@
+         9666894 function calls (9350344 primitive calls) in 47.255 seconds
+
+   Ordered by: cumulative time
+   List reduced from 13148 to 50 due to restriction <50>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.014    0.014   47.297   47.297 C:\Users\Kushi KKS\MAP\src\benchmarking.py:94(benchmark)
+  5831/15    0.067    0.000   38.553    2.570 <frozen importlib._bootstrap>:1165(_find_and_load)
+  2724/13    0.047    0.000   38.552    2.966 <frozen importlib._bootstrap>:1120(_find_and_load_unlocked)
+  2624/14    0.034    0.000   38.525    2.752 <frozen importlib._bootstrap>:666(_load_unlocked)
+  2493/10    0.025    0.000   38.523    3.852 <frozen importlib._bootstrap_external>:934(exec_module)
+  5974/21    0.014    0.000   38.419    1.829 <frozen importlib._bootstrap>:233(_call_with_frames_removed)
+  5212/10    0.627    0.000   38.414    3.841 {built-in method builtins.exec}
+   511/36    0.005    0.000   37.499    1.042 {built-in method builtins.__import__}
+       21    0.000    0.000   32.362    1.541 C:\Users\Kushi KKS\MAP\src\benchmarking.py:24(timed)
+3700/1547    0.019    0.000   31.434    0.020 <frozen importlib._bootstrap>:1207(_handle_fromlist)
+        1    0.000    0.000   29.787   29.787 C:\Users\Kushi KKS\MAP\src\benchmarking.py:120(<lambda>)
+        1    0.000    0.000   29.787   29.787 C:\Users\Kushi KKS\MAP\src\embeddings.py:46(__init__)
+        1    0.000    0.000   28.059   28.059 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\sentence_transformers\__init__.py:1(<module>)
+ 3189/215    0.006    0.000   17.987    0.084 C:\Users\Kushi KKS\AppData\Local\Programs\Python\Python311\Lib\importlib\__init__.py:108(import_module)
+ 3210/215    0.005    0.000   17.986    0.084 <frozen importlib._bootstrap>:1192(_gcd_import)
+73819/56161    0.068    0.000   17.812    0.000 {built-in method builtins.hasattr}
+        1    0.000    0.000   16.155   16.155 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\sentence_transformers\base\__init__.py:1(<module>)
+   109/72    0.001    0.000   16.143    0.224 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\transformers\utils\import_utils.py:2560(__getattr__)
+    85/61    0.000    0.000   16.142    0.265 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\transformers\utils\import_utils.py:2840(_get_module)
+        1    0.000    0.000   15.889   15.889 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\sentence_transformers\base\model.py:1(<module>)
+     2402    0.045    0.000   15.403    0.006 <frozen ntpath>:674(realpath)
+     2402    0.251    0.000   14.531    0.006 <frozen ntpath>:625(_getfinalpathname_nonstrict)
+       16    0.000    0.000   14.494    0.906 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\torch\library.py:180(_register_fake)
+       24    0.001    0.000   14.485    0.604 C:\Users\Kushi KKS\AppData\Local\Programs\Python\Python311\Lib\inspect.py:1051(findsource)
+       16    0.000    0.000   14.482    0.905 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\torch\_library\utils.py:36(get_source)
+       16    0.001    0.000   14.481    0.905 C:\Users\Kushi KKS\AppData\Local\Programs\Python\Python311\Lib\inspect.py:1658(getframeinfo)
+       40    0.058    0.001   14.464    0.362 C:\Users\Kushi KKS\AppData\Local\Programs\Python\Python311\Lib\inspect.py:969(getmodule)
+        1    0.001    0.001   14.264   14.264 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\transformers\modeling_utils.py:1(<module>)
+        2    0.000    0.000   12.116    6.058 C:\Users\Kushi KKS\MAP\src\runtime.py:17(configure)
+        1    0.000    0.000   11.191   11.191 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\sentence_transformers\backend\__init__.py:1(<module>)
+        1    0.000    0.000   10.652   10.652 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\transformers\loss\loss_utils.py:1(<module>)
+        1    0.000    0.000   10.608   10.608 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\transformers\loss\loss_d_fine.py:1(<module>)
+        1    0.000    0.000   10.599   10.599 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\transformers\loss\loss_for_object_detection.py:1(<module>)
+        1    0.000    0.000   10.595   10.595 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\transformers\image_transforms.py:1(<module>)
+        1    0.000    0.000   10.590   10.590 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\transformers\image_utils.py:1(<module>)
+        1    0.000    0.000   10.558   10.558 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\torchvision\__init__.py:1(<module>)
+        2    0.000    0.000   10.081    5.041 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\torch\__init__.py:1379(use_deterministic_algorithms)
+        1    0.000    0.000   10.076   10.076 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\torch\_inductor\__init__.py:1(<module>)
+        1    0.000    0.000   10.070   10.070 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\torch\_inductor\standalone_compile.py:1(<module>)
+        1    0.000    0.000   10.019   10.019 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\torch\_dynamo\__init__.py:1(<module>)
+        2    0.000    0.000    9.528    4.764 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\torch\library.py:1080(register)
+        1    0.000    0.000    9.504    9.504 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\torchvision\_meta_registrations.py:1(<module>)
+        1    0.000    0.000    9.478    9.478 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\torch\_dynamo\aot_compile.py:1(<module>)
+        1    0.000    0.000    9.428    9.428 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\torch\_dynamo\convert_frame.py:1(<module>)
+        1    0.001    0.001    9.340    9.340 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\torch\_dynamo\symbolic_convert.py:1(<module>)
+    26742    7.514    0.000    7.514    0.000 {built-in method nt._getfinalpathname}
+    24340    0.246    0.000    6.671    0.000 <frozen ntpath>:583(_readlink_deep)
+     2493    0.084    0.000    6.649    0.003 <frozen importlib._bootstrap_external>:1007(get_code)
+        1    0.001    0.001    6.453    6.453 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\torch\_dynamo\trace_rules.py:1(<module>)
+        1    0.000    0.000    6.274    6.274 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\sentence_transformers\backend\quantize.py:1(<module>)
+
+

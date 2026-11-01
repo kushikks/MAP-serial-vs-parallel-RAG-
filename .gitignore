@@ -1,0 +1,32 @@
+.venv*/
+__pycache__/
+.pytest_cache/
+data/raw/
+data/processed/
+artifacts/
+*.tmp
+dependency-plan.json
+*.pyc
+.env
+.env.*
+!.env.example
+*.key
+credentials.json
+.cache/
+.cache/huggingface/
+artifacts/embeddings/
+artifacts/indexes/
+*.safetensors
+*.pt
+*.pth
+
+# Editor and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.log
+tmp/
+temp/

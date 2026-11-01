@@ -1,0 +1,625 @@
+{
+  "hardware": {
+    "os": "Windows-10-10.0.26200-SP0",
+    "cpu": "13th Gen Intel(R) Core(TM) i9-13900H",
+    "physical_cores": 14,
+    "logical_cores": 20,
+    "ram_total_bytes": 16780304384,
+    "ram_available_bytes": 3288113152,
+    "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+    "python_executable": "C:\\Users\\Kushi KKS\\MAP\\.venv-rag\\Scripts\\python.exe",
+    "packages": {
+      "torch": "2.11.0+cu128",
+      "sentence-transformers": "6.2.0",
+      "transformers": "5.22.1",
+      "faiss-cpu": "1.15.1",
+      "numpy": "2.4.6",
+      "psutil": "7.2.2",
+      "scipy": "1.17.1",
+      "tokenizers": "0.23.3",
+      "huggingface-hub": "2.4.0"
+    },
+    "cuda_runtime": "12.8",
+    "cuda_available": true,
+    "nvidia_smi": "name, driver_version, memory.total [MiB], temperature.gpu, utilization.gpu [%], power.draw [W]\nNVIDIA GeForce RTX 4050 Laptop GPU, 581.80, 6141 MiB, 60, 19 %, 15.05 W",
+    "ac_power": true,
+    "git_commit": null,
+    "faiss_gpu_api_available": false,
+    "faiss_compile_options": "",
+    "gpu": "NVIDIA GeForce RTX 4050 Laptop GPU",
+    "vram_bytes": 6438780928,
+    "cuda_computation_sum": 499500
+  },
+  "thread_limits": {
+    "environment": {
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "BLIS_NUM_THREADS": "1"
+    },
+    "torch_threads": 1,
+    "torch_interop": 1,
+    "faiss_threads": 1,
+    "pools": [
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "num_threads": 1,
+        "prefix": "libscipy_openblas",
+        "filepath": "C:\\Users\\Kushi KKS\\MAP\\.venv-rag\\Lib\\site-packages\\numpy.libs\\libscipy_openblas64_-63c857e738469261263c764a36be9436.dll",
+        "version": "0.3.31.188.0",
+        "threading_layer": "pthreads",
+        "architecture": "Haswell"
+      },
+      {
+        "user_api": "openmp",
+        "internal_api": "openmp",
+        "num_threads": 1,
+        "prefix": "vcomp",
+        "filepath": "C:\\Users\\Kushi KKS\\MAP\\.venv-rag\\Lib\\site-packages\\faiss_cpu.libs\\VCOMP140.DLL",
+        "version": null
+      },
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "num_threads": 1,
+        "prefix": "libopenblas",
+        "filepath": "C:\\Users\\Kushi KKS\\MAP\\.venv-rag\\Lib\\site-packages\\faiss_cpu.libs\\libopenblas.dll",
+        "version": "0.3.30",
+        "threading_layer": "pthreads",
+        "architecture": "Haswell"
+      },
+      {
+        "user_api": "openmp",
+        "internal_api": "openmp",
+        "num_threads": 1,
+        "prefix": "libiomp",
+        "filepath": "C:\\Users\\Kushi KKS\\MAP\\.venv-rag\\Lib\\site-packages\\torch\\lib\\libiomp5md.dll",
+        "version": null
+      },
+      {
+        "user_api": "openmp",
+        "internal_api": "openmp",
+        "num_threads": 1,
+        "prefix": "libiomp",
+        "filepath": "C:\\Users\\Kushi KKS\\MAP\\.venv-rag\\Lib\\site-packages\\torch\\lib\\libiompstubs5md.dll",
+        "version": null
+      }
+    ]
+  },
+  "rows": [
+    {
+      "backend": "faiss_cpu",
+      "threads": 1,
+      "batch_size": 1,
+      "trial": 1,
+      "queries": 300,
+      "search_s": 1.0603742999956012,
+      "queries_per_s": 282.9189655023179,
+      "amortized_latency_s": 0.0035345809999853374,
+      "index_build_s": 0.0068896000739187,
+      "parity": {
+        "passed": true,
+        "rank_index_differences": 0,
+        "score_atol": 3e-05
+      }
+    },
+    {
+      "backend": "faiss_cpu",
+      "threads": 1,
+      "batch_size": 1,
+      "trial": 2,
+      "queries": 300,
+      "search_s": 1.106437599984929,
+      "queries_per_s": 271.140460161591,
+      "amortized_latency_s": 0.0036881253332830964,
+      "index_build_s": 0.0068896000739187,
+      "parity": {
+        "passed": true,
+        "rank_index_differences": 0,
+        "score_atol": 3e-05
+      }
+    },
+    {
+      "backend": "faiss_cpu",
+      "threads": 1,
+      "batch_size": 1,
+      "trial": 3,
+      "queries": 300,
+      "search_s": 1.028521299827844,
+      "queries_per_s": 291.68088210736585,
+      "amortized_latency_s": 0.0034284043327594796,
+      "index_build_s": 0.0068896000739187,
+      "parity": {
+        "passed": true,
+        "rank_index_differences": 0,
+        "score_atol": 3e-05
+      }
+    },
+    {
+      "backend": "faiss_cpu",
+      "threads": 1,
+      "batch_size": 1,
+      "trial": 4,
+      "queries": 300,
+      "search_s": 1.0270420999731869,
+      "queries_per_s": 292.10097619935163,
+      "amortized_latency_s": 0.0034234736665772897,
+      "index_build_s": 0.0068896000739187,
+      "parity": {
+        "passed": true,
+        "rank_index_differences": 0,
+        "score_atol": 3e-05
+      }
+    },
+    {
+      "backend": "faiss_cpu",
+      "threads": 1,
+      "batch_size": 1,
+      "trial": 5,
+      "queries": 300,
+      "search_s": 1.0341737000271678,
+      "queries_per_s": 290.0866653175564,
+      "amortized_latency_s": 0.003447245666757226,
+      "index_build_s": 0.0068896000739187,
+      "parity": {
+        "passed": true,
+        "rank_index_differences": 0,
+        "score_atol": 3e-05
+      }
+    },
+    {
+      "backend": "faiss_cpu",
+      "threads": 1,
+      "batch_size": 32,
+      "trial": 1,
+      "queries": 300,
+      "search_s": 0.9995837002061307,
+      "queries_per_s": 300.1249419514694,
+      "amortized_latency_s": 0.0033319456673537693,
+      "index_build_s": 0.0068896000739187,
+      "parity": {
+        "passed": true,
+        "rank_index_differences": 0,
+        "score_atol": 3e-05
+      }
+    },
+    {
+      "backend": "faiss_cpu",
+      "threads": 1,
+      "batch_size": 32,
+      "trial": 2,
+      "queries": 300,
+      "search_s": 1.0041603001300246,
+      "queries_per_s": 298.75708087757926,
+      "amortized_latency_s": 0.003347201000433415,
+      "index_build_s": 0.0068896000739187,
+      "parity": {
+        "passed": true,
+        "rank_index_differences": 0,
+        "score_atol": 3e-05
+      }
+    },
+    {
+      "backend": "faiss_cpu",
+      "threads": 1,
+      "batch_size": 32,
+      "trial": 3,
+      "queries": 300,
+      "search_s": 1.0212324000895023,
+      "queries_per_s": 293.76271255564114,
+      "amortized_latency_s": 0.003404108000298341,
+      "index_build_s": 0.0068896000739187,
+      "parity": {
+        "passed": true,
+        "rank_index_differences": 0,
+        "score_atol": 3e-05
+      }
+    },
+    {
+      "backend": "faiss_cpu",
+      "threads": 1,
+      "batch_size": 32,
+      "trial": 4,
+      "queries": 300,
+      "search_s": 1.0109778000041842,
+      "queries_per_s": 296.742421048967,
+      "amortized_latency_s": 0.0033699260000139477,
+      "index_build_s": 0.0068896000739187,
+      "parity": {
+        "passed": true,
+        "rank_index_differences": 0,
+        "score_atol": 3e-05
+      }
+    },
+    {
+      "backend": "faiss_cpu",
+      "threads": 1,
+      "batch_size": 32,
+      "trial": 5,
+      "queries": 300,
+      "search_s": 1.0352920999284834,
+      "queries_per_s": 289.773292021376,
+      "amortized_latency_s": 0.003450973666428278,
+      "index_build_s": 0.0068896000739187,
+      "parity": {
+        "passed": true,
+        "rank_index_differences": 0,
+        "score_atol": 3e-05
+      }
+    },
+    {
+      "backend": "faiss_cpu",
+      "threads": 1,
+      "batch_size": 300,
+      "trial": 1,
+      "queries": 300,
+      "search_s": 1.068164500175044,
+      "queries_per_s": 280.85561723015314,
+      "amortized_latency_s": 0.0035605483339168132,
+      "index_build_s": 0.0068896000739187,
+      "parity": {
+        "passed": true,
+        "rank_index_differences": 0,
+        "score_atol": 3e-05
+      }
+    },
+    {
+      "backend": "faiss_cpu",
+      "threads": 1,
+      "batch_size": 300,
+      "trial": 2,
+      "queries": 300,
+      "search_s": 0.996782099828124,
+      "queries_per_s": 300.968486544581,
+      "amortized_latency_s": 0.0033226069994270802,
+      "index_build_s": 0.0068896000739187,
+      "parity": {
+        "passed": true,
+        "rank_index_differences": 0,
+        "score_atol": 3e-05
+      }
+    },
+    {
+      "backend": "faiss_cpu",
+      "threads": 1,
+      "batch_size": 300,
+      "trial": 3,
+      "queries": 300,
+      "search_s": 0.9875982999801636,
+      "queries_per_s": 303.7672300630992,
+      "amortized_latency_s": 0.003291994333267212,
+      "index_build_s": 0.0068896000739187,
+      "parity": {
+        "passed": true,
+        "rank_index_differences": 0,
+        "score_atol": 3e-05
+      }
+    },
+    {
+      "backend": "faiss_cpu",
+      "threads": 1,
+      "batch_size": 300,
+      "trial": 4,
+      "queries": 300,
+      "search_s": 0.9871699002105743,
+      "queries_per_s": 303.8990552041819,
+      "amortized_latency_s": 0.0032905663340352474,
+      "index_build_s": 0.0068896000739187,
+      "parity": {
+        "passed": true,
+        "rank_index_differences": 0,
+        "score_atol": 3e-05
+      }
+    },
+    {
+      "backend": "faiss_cpu",
+      "threads": 1,
+      "batch_size": 300,
+      "trial": 5,
+      "queries": 300,
+      "search_s": 0.9878950999118388,
+      "queries_per_s": 303.67596724264797,
+      "amortized_latency_s": 0.003292983666372796,
+      "index_build_s": 0.0068896000739187,
+      "parity": {
+        "passed": true,
+        "rank_index_differences": 0,
+        "score_atol": 3e-05
+      }
+    },
+    {
+      "backend": "torch_cuda_exact",
+      "threads": 1,
+      "batch_size": 1,
+      "trial": 1,
+      "queries": 300,
+      "search_s": 0.255964299896732,
+      "queries_per_s": 1172.0384448965503,
+      "amortized_latency_s": 0.0008532143329891066,
+      "index_build_s": 0.08036209992133081,
+      "parity": {
+        "passed": true,
+        "rank_index_differences": 0,
+        "score_atol": 3e-05
+      }
+    },
+    {
+      "backend": "torch_cuda_exact",
+      "threads": 1,
+      "batch_size": 1,
+      "trial": 2,
+      "queries": 300,
+      "search_s": 0.263455200009048,
+      "queries_per_s": 1138.7135269666226,
+      "amortized_latency_s": 0.00087818400003016,
+      "index_build_s": 0.08036209992133081,
+      "parity": {
+        "passed": true,
+        "rank_index_differences": 0,
+        "score_atol": 3e-05
+      }
+    },
+    {
+      "backend": "torch_cuda_exact",
+      "threads": 1,
+      "batch_size": 1,
+      "trial": 3,
+      "queries": 300,
+      "search_s": 0.24198789987713099,
+      "queries_per_s": 1239.731408687478,
+      "amortized_latency_s": 0.00080662633292377,
+      "index_build_s": 0.08036209992133081,
+      "parity": {
+        "passed": true,
+        "rank_index_differences": 0,
+        "score_atol": 3e-05
+      }
+    },
+    {
+      "backend": "torch_cuda_exact",
+      "threads": 1,
+      "batch_size": 1,
+      "trial": 4,
+      "queries": 300,
+      "search_s": 0.24984390009194613,
+      "queries_per_s": 1200.7497477008474,
+      "amortized_latency_s": 0.0008328130003064871,
+      "index_build_s": 0.08036209992133081,
+      "parity": {
+        "passed": true,
+        "rank_index_differences": 0,
+        "score_atol": 3e-05
+      }
+    },
+    {
+      "backend": "torch_cuda_exact",
+      "threads": 1,
+      "batch_size": 1,
+      "trial": 5,
+      "queries": 300,
+      "search_s": 0.25271229981444776,
+      "queries_per_s": 1187.1206910794326,
+      "amortized_latency_s": 0.0008423743327148259,
+      "index_build_s": 0.08036209992133081,
+      "parity": {
+        "passed": true,
+        "rank_index_differences": 0,
+        "score_atol": 3e-05
+      }
+    },
+    {
+      "backend": "torch_cuda_exact",
+      "threads": 1,
+      "batch_size": 32,
+      "trial": 1,
+      "queries": 300,
+      "search_s": 0.01383799989707768,
+      "queries_per_s": 21679.433605383554,
+      "amortized_latency_s": 4.612666632359227e-05,
+      "index_build_s": 0.08036209992133081,
+      "parity": {
+        "passed": true,
+        "rank_index_differences": 0,
+        "score_atol": 3e-05
+      }
+    },
+    {
+      "backend": "torch_cuda_exact",
+      "threads": 1,
+      "batch_size": 32,
+      "trial": 2,
+      "queries": 300,
+      "search_s": 0.013478399952873588,
+      "queries_per_s": 22257.834835657934,
+      "amortized_latency_s": 4.492799984291196e-05,
+      "index_build_s": 0.08036209992133081,
+      "parity": {
+        "passed": true,
+        "rank_index_differences": 0,
+        "score_atol": 3e-05
+      }
+    },
+    {
+      "backend": "torch_cuda_exact",
+      "threads": 1,
+      "batch_size": 32,
+      "trial": 3,
+      "queries": 300,
+      "search_s": 0.012743400176987052,
+      "queries_per_s": 23541.59767671438,
+      "amortized_latency_s": 4.247800058995684e-05,
+      "index_build_s": 0.08036209992133081,
+      "parity": {
+        "passed": true,
+        "rank_index_differences": 0,
+        "score_atol": 3e-05
+      }
+    },
+    {
+      "backend": "torch_cuda_exact",
+      "threads": 1,
+      "batch_size": 32,
+      "trial": 4,
+      "queries": 300,
+      "search_s": 0.012311600148677826,
+      "queries_per_s": 24367.26309960755,
+      "amortized_latency_s": 4.103866716225942e-05,
+      "index_build_s": 0.08036209992133081,
+      "parity": {
+        "passed": true,
+        "rank_index_differences": 0,
+        "score_atol": 3e-05
+      }
+    },
+    {
+      "backend": "torch_cuda_exact",
+      "threads": 1,
+      "batch_size": 32,
+      "trial": 5,
+      "queries": 300,
+      "search_s": 0.010873599909245968,
+      "queries_per_s": 27589.758911849054,
+      "amortized_latency_s": 3.624533303081989e-05,
+      "index_build_s": 0.08036209992133081,
+      "parity": {
+        "passed": true,
+        "rank_index_differences": 0,
+        "score_atol": 3e-05
+      }
+    },
+    {
+      "backend": "torch_cuda_exact",
+      "threads": 1,
+      "batch_size": 300,
+      "trial": 1,
+      "queries": 300,
+      "search_s": 0.0036184999626129866,
+      "queries_per_s": 82907.28287955112,
+      "amortized_latency_s": 1.2061666542043289e-05,
+      "index_build_s": 0.08036209992133081,
+      "parity": {
+        "passed": true,
+        "rank_index_differences": 0,
+        "score_atol": 3e-05
+      }
+    },
+    {
+      "backend": "torch_cuda_exact",
+      "threads": 1,
+      "batch_size": 300,
+      "trial": 2,
+      "queries": 300,
+      "search_s": 0.0032496999483555555,
+      "queries_per_s": 92316.21527144649,
+      "amortized_latency_s": 1.0832333161185186e-05,
+      "index_build_s": 0.08036209992133081,
+      "parity": {
+        "passed": true,
+        "rank_index_differences": 0,
+        "score_atol": 3e-05
+      }
+    },
+    {
+      "backend": "torch_cuda_exact",
+      "threads": 1,
+      "batch_size": 300,
+      "trial": 3,
+      "queries": 300,
+      "search_s": 0.003630000166594982,
+      "queries_per_s": 82644.62430628658,
+      "amortized_latency_s": 1.2100000555316607e-05,
+      "index_build_s": 0.08036209992133081,
+      "parity": {
+        "passed": true,
+        "rank_index_differences": 0,
+        "score_atol": 3e-05
+      }
+    },
+    {
+      "backend": "torch_cuda_exact",
+      "threads": 1,
+      "batch_size": 300,
+      "trial": 4,
+      "queries": 300,
+      "search_s": 0.0032349000684916973,
+      "queries_per_s": 92738.56800772143,
+      "amortized_latency_s": 1.0783000228305657e-05,
+      "index_build_s": 0.08036209992133081,
+      "parity": {
+        "passed": true,
+        "rank_index_differences": 0,
+        "score_atol": 3e-05
+      }
+    },
+    {
+      "backend": "torch_cuda_exact",
+      "threads": 1,
+      "batch_size": 300,
+      "trial": 5,
+      "queries": 300,
+      "search_s": 0.003603400196880102,
+      "queries_per_s": 83254.69934195657,
+      "amortized_latency_s": 1.201133398960034e-05,
+      "index_build_s": 0.08036209992133081,
+      "parity": {
+        "passed": true,
+        "rank_index_differences": 0,
+        "score_atol": 3e-05
+      }
+    }
+  ],
+  "definition": "Same serial float32 document and claim vectors; transfer and deterministic sorting included",
+  "summary": {
+    "faiss_cpu_batch1": {
+      "n": 5,
+      "mean": 1.0513097999617458,
+      "std": 0.03362708141630505,
+      "median": 1.0341737000271678,
+      "ci95_low": 1.0095562636024529,
+      "ci95_high": 1.0930633363210387
+    },
+    "faiss_cpu_batch32": {
+      "n": 5,
+      "mean": 1.014249260071665,
+      "std": 0.014310254746117737,
+      "median": 1.0109778000041842,
+      "ci95_low": 0.9964807319482861,
+      "ci95_high": 1.032017788195044
+    },
+    "faiss_cpu_batch300": {
+      "n": 5,
+      "mean": 1.005521980021149,
+      "std": 0.03524640009629666,
+      "median": 0.9878950999118388,
+      "ci95_low": 0.9617577939552917,
+      "ci95_high": 1.0492861660870063
+    },
+    "torch_cuda_exact_batch1": {
+      "n": 5,
+      "mean": 0.25279271993786095,
+      "std": 0.007892932647765286,
+      "median": 0.25271229981444776,
+      "ci95_low": 0.2429923496288837,
+      "ci95_high": 0.26259309024683825
+    },
+    "torch_cuda_exact_batch32": {
+      "n": 5,
+      "mean": 0.012649000016972422,
+      "std": 0.0011593554860799037,
+      "median": 0.012743400176987052,
+      "ci95_low": 0.01120947004878698,
+      "ci95_high": 0.014088529985157864
+    },
+    "torch_cuda_exact_batch300": {
+      "n": 5,
+      "mean": 0.003467300068587065,
+      "std": 0.00020567908689005744,
+      "median": 0.003603400196880102,
+      "ci95_low": 0.0032119157512122565,
+      "ci95_high": 0.003722684385961873
+    }
+  }
+}

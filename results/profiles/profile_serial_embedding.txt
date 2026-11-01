@@ -1,0 +1,68 @@
+         229362 function calls (212143 primitive calls) in 12.881 seconds
+
+   Ordered by: cumulative time
+   List reduced from 301 to 60 due to restriction <60>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000   12.882   12.882 C:\Users\Kushi KKS\MAP\src\embeddings.py:77(encode)
+        1    0.005    0.005   12.882   12.882 C:\Users\Kushi KKS\MAP\src\embeddings.py:92(_encode)
+  7424/64    0.036    0.000   12.627    0.197 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\torch\nn\modules\module.py:1775(_wrapped_call_impl)
+  7424/64    0.061    0.000   12.627    0.197 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\torch\nn\modules\module.py:1783(_call_impl)
+       64    0.003    0.000   12.626    0.197 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\sentence_transformers\base\model.py:585(forward)
+       64    0.003    0.000   12.585    0.197 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\sentence_transformers\base\modules\transformer.py:1591(forward)
+       64    0.002    0.000   12.577    0.197 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\transformers\utils\generic.py:1019(wrapper)
+       64    0.003    0.000   12.572    0.196 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\transformers\utils\output_capturing.py:250(wrapper)
+       64    0.003    0.000   12.563    0.196 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\transformers\models\bert\modeling_bert.py:620(forward)
+       64    0.007    0.000   12.436    0.194 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\transformers\models\bert\modeling_bert.py:425(forward)
+      384    0.004    0.000   12.415    0.032 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\transformers\modeling_layers.py:82(__call__)
+      384    0.007    0.000   12.404    0.032 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\transformers\models\bert\modeling_bert.py:374(forward)
+     2368    0.018    0.000    9.462    0.004 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\torch\nn\modules\linear.py:130(forward)
+     2368    9.438    0.004    9.438    0.004 {built-in method torch._C._nn.linear}
+      384    0.006    0.000    6.938    0.018 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\transformers\pytorch_utils.py:124(apply_chunking_to_forward)
+      384    0.006    0.000    6.852    0.018 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\transformers\models\bert\modeling_bert.py:413(feed_forward_chunk)
+      384    0.008    0.000    5.453    0.014 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\transformers\models\bert\modeling_bert.py:304(forward)
+      384    0.038    0.000    4.439    0.012 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\transformers\models\bert\modeling_bert.py:164(forward)
+      384    0.011    0.000    3.525    0.009 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\transformers\models\bert\modeling_bert.py:334(forward)
+      384    0.066    0.000    3.304    0.009 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\transformers\models\bert\modeling_bert.py:347(forward)
+      384    0.014    0.000    1.877    0.005 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\transformers\integrations\sdpa_attention.py:80(sdpa_attention_forward)
+      384    1.846    0.005    1.846    0.005 {built-in method torch._C._nn.scaled_dot_product_attention}
+      384    0.054    0.000    0.986    0.003 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\transformers\models\bert\modeling_bert.py:289(forward)
+      384    0.001    0.000    0.388    0.001 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\transformers\activations.py:88(forward)
+      384    0.387    0.001    0.387    0.001 {built-in method torch._C._nn.gelu}
+       65    0.002    0.000    0.238    0.004 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\torch\utils\data\dataloader.py:736(__next__)
+       65    0.000    0.000    0.223    0.003 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\torch\utils\data\dataloader.py:799(_next_data)
+       64    0.001    0.000    0.222    0.003 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\torch\utils\data\_utils\fetch.py:49(fetch)
+       64    0.001    0.000    0.222    0.003 C:\Users\Kushi KKS\MAP\src\tokenization.py:22(__call__)
+       64    0.003    0.000    0.221    0.003 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\transformers\tokenization_utils_base.py:2449(__call__)
+       64    0.003    0.000    0.213    0.003 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\transformers\tokenization_utils_tokenizers.py:971(_encode_plus)
+      832    0.008    0.000    0.212    0.000 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\torch\nn\modules\normalization.py:228(forward)
+      832    0.010    0.000    0.201    0.000 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\torch\nn\functional.py:2914(layer_norm)
+      832    0.188    0.000    0.188    0.000 {built-in method torch.layer_norm}
+       64    0.113    0.002    0.113    0.002 {method 'encode_batch' of 'tokenizers.Tokenizer' objects}
+       64    0.001    0.000    0.090    0.001 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\transformers\tokenization_utils_base.py:228(__init__)
+       64    0.003    0.000    0.087    0.001 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\transformers\tokenization_utils_base.py:671(convert_to_tensors)
+      192    0.001    0.000    0.082    0.000 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\transformers\tokenization_utils_base.py:694(as_tensor)
+      384    0.002    0.000    0.078    0.000 C:\Users\Kushi KKS\AppData\Local\Programs\Python\Python311\Lib\inspect.py:3261(signature)
+      384    0.003    0.000    0.075    0.000 C:\Users\Kushi KKS\AppData\Local\Programs\Python\Python311\Lib\inspect.py:3007(from_callable)
+  768/384    0.016    0.000    0.073    0.000 C:\Users\Kushi KKS\AppData\Local\Programs\Python\Python311\Lib\inspect.py:2435(_signature_from_callable)
+       64    0.018    0.000    0.073    0.001 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\transformers\models\bert\modeling_bert.py:68(forward)
+  384/192    0.040    0.000    0.061    0.000 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\transformers\tokenization_utils_base.py:89(flatten)
+      384    0.016    0.000    0.039    0.000 C:\Users\Kushi KKS\AppData\Local\Programs\Python\Python311\Lib\inspect.py:2331(_signature_from_function)
+    14144    0.038    0.000    0.038    0.000 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\torch\nn\modules\module.py:1955(__getattr__)
+     7488    0.034    0.000    0.034    0.000 {built-in method torch._C._get_tracing_state}
+      832    0.004    0.000    0.033    0.000 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\torch\nn\modules\dropout.py:69(forward)
+      192    0.001    0.000    0.032    0.000 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\torch\nn\modules\sparse.py:188(forward)
+      192    0.001    0.000    0.030    0.000 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\torch\nn\functional.py:2455(embedding)
+      192    0.029    0.000    0.029    0.000 {built-in method torch.embedding}
+      832    0.013    0.000    0.029    0.000 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\torch\nn\functional.py:1419(dropout)
+2048/1408    0.010    0.000    0.025    0.000 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\transformers\configuration_utils.py:655(__getattribute__)
+       64    0.001    0.000    0.023    0.000 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\sentence_transformers\sentence_transformer\modules\pooling.py:123(forward)
+       64    0.001    0.000    0.020    0.000 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\transformers\models\bert\modeling_bert.py:688(_create_attention_masks)
+       64    0.009    0.000    0.020    0.000 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\sentence_transformers\sentence_transformer\modules\pooling.py:171(_forward_padded)
+      192    0.019    0.000    0.019    0.000 {built-in method torch.tensor}
+       64    0.001    0.000    0.019    0.000 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\transformers\masking_utils.py:979(create_bidirectional_mask)
+4096/2816    0.013    0.000    0.018    0.000 C:\Users\Kushi KKS\MAP\.venv-rag\Lib\site-packages\transformers\integrations\heterogeneity\configuration_utils.py:291(__getattribute__)
+     1536    0.016    0.000    0.016    0.000 {method 'transpose' of 'torch._C.TensorBase' objects}
+    52880    0.014    0.000    0.016    0.000 {built-in method builtins.isinstance}
+
+

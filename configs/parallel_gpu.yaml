@@ -1,0 +1,8 @@
+name: hybrid_cuda_faiss_cpu
+device: cuda
+backend: faiss_cpu
+workers: 4
+threads: 4
+batch_size: 64
+loader_workers: 4
+max_length: 256

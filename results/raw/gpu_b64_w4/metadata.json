@@ -1,0 +1,317 @@
+{
+  "config": {
+    "name": "hybrid_cuda_faiss_cpu",
+    "device": "cuda",
+    "backend": "faiss_cpu",
+    "workers": 4,
+    "threads": 4,
+    "batch_size": 64,
+    "loader_workers": 4,
+    "max_length": 256
+  },
+  "hardware_before": {
+    "os": "Windows-10-10.0.26200-SP0",
+    "cpu": "13th Gen Intel(R) Core(TM) i9-13900H",
+    "physical_cores": 14,
+    "logical_cores": 20,
+    "ram_total_bytes": 16780304384,
+    "ram_available_bytes": 3994128384,
+    "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+    "python_executable": "C:\\Users\\Kushi KKS\\MAP\\.venv-rag\\Scripts\\python.exe",
+    "packages": {
+      "torch": "2.11.0+cu128",
+      "sentence-transformers": "6.2.0",
+      "transformers": "5.22.1",
+      "faiss-cpu": "1.15.1",
+      "numpy": "2.4.6",
+      "psutil": "7.2.2",
+      "scipy": "1.17.1",
+      "tokenizers": "0.23.3",
+      "huggingface-hub": "2.4.0"
+    },
+    "cuda_runtime": "12.8",
+    "cuda_available": true,
+    "nvidia_smi": "name, driver_version, memory.total [MiB], temperature.gpu, utilization.gpu [%], power.draw [W]\nNVIDIA GeForce RTX 4050 Laptop GPU, 581.80, 6141 MiB, 61, 0 %, 2.08 W",
+    "ac_power": true,
+    "git_commit": null,
+    "faiss_gpu_api_available": false,
+    "faiss_compile_options": "",
+    "gpu": "NVIDIA GeForce RTX 4050 Laptop GPU",
+    "vram_bytes": 6438780928,
+    "cuda_computation_sum": 499500
+  },
+  "thread_limits": {
+    "environment": {
+      "OMP_NUM_THREADS": "4",
+      "MKL_NUM_THREADS": "4",
+      "OPENBLAS_NUM_THREADS": "4",
+      "NUMEXPR_NUM_THREADS": "4",
+      "VECLIB_MAXIMUM_THREADS": "4",
+      "BLIS_NUM_THREADS": "4"
+    },
+    "torch_threads": 4,
+    "torch_interop": 1,
+    "faiss_threads": 4,
+    "pools": [
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "num_threads": 4,
+        "prefix": "libscipy_openblas",
+        "filepath": "C:\\Users\\Kushi KKS\\MAP\\.venv-rag\\Lib\\site-packages\\numpy.libs\\libscipy_openblas64_-63c857e738469261263c764a36be9436.dll",
+        "version": "0.3.31.188.0",
+        "threading_layer": "pthreads",
+        "architecture": "Haswell"
+      },
+      {
+        "user_api": "openmp",
+        "internal_api": "openmp",
+        "num_threads": 4,
+        "prefix": "vcomp",
+        "filepath": "C:\\Users\\Kushi KKS\\MAP\\.venv-rag\\Lib\\site-packages\\faiss_cpu.libs\\VCOMP140.DLL",
+        "version": null
+      },
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "num_threads": 4,
+        "prefix": "libopenblas",
+        "filepath": "C:\\Users\\Kushi KKS\\MAP\\.venv-rag\\Lib\\site-packages\\faiss_cpu.libs\\libopenblas.dll",
+        "version": "0.3.30",
+        "threading_layer": "pthreads",
+        "architecture": "Haswell"
+      },
+      {
+        "user_api": "openmp",
+        "internal_api": "openmp",
+        "num_threads": 4,
+        "prefix": "libiomp",
+        "filepath": "C:\\Users\\Kushi KKS\\MAP\\.venv-rag\\Lib\\site-packages\\torch\\lib\\libiomp5md.dll",
+        "version": null
+      },
+      {
+        "user_api": "openmp",
+        "internal_api": "openmp",
+        "num_threads": 1,
+        "prefix": "libiomp",
+        "filepath": "C:\\Users\\Kushi KKS\\MAP\\.venv-rag\\Lib\\site-packages\\torch\\lib\\libiompstubs5md.dll",
+        "version": null
+      }
+    ]
+  },
+  "dataset": {
+    "dataset": "allenai/scifact",
+    "hf_revision": "1fe54665deee011033b2dd98db5752e0d586fdfb",
+    "hf_config_version": "1.0.0",
+    "source": "https://scifact.s3-us-west-2.amazonaws.com/release/latest/data.tar.gz",
+    "download_utc": "2026-11-01T03:04:51.765608+00:00",
+    "loader": "official JSONL source used by inspected HF legacy script",
+    "configurations": {
+      "corpus": [
+        "train"
+      ],
+      "claims": [
+        "train",
+        "validation",
+        "test"
+      ]
+    },
+    "sha256": {
+      "corpus.jsonl": "b8d6c89624cb2ed74dee8938effc4f5d8bd2086887880af8110d64be4ceade62",
+      "claims_train.jsonl": "f4c8fa82d8bd0653a9cc8d61a6ea48c25eacea64e90af5dbf390ebb1b74372f0",
+      "claims_dev.jsonl": "86f0435d08fdb65d1aa41d1472684f57e6e71930626497bdf4d7a9ec1a632217",
+      "claims_test.jsonl": "558930d75215c73f84a28fe538307d6d397c9de1ec7239514cf45f80d75d2ca3",
+      "data.tar.gz": "11c621288d41ac144d29b13b0f8503b3820b7d6e8b1f6ff24dff335c196d76be",
+      "scifact.py": "84aef0b1137f9e26f999073ccef155f5ce9def5ff21f8ae97f06bde3167644bc",
+      "dataset_infos.json": "91bc98f534dd6f056a3a22a558fda7869c8f1f3c18c6e028f91dd4248feff119",
+      "hf_repository.json": "28538f43c9d3be4d4abde7d2ec00654fa1785bbe201b4736695b517e776fc855",
+      "README.md": "09ab2b461269f40268645432363df00242f6a52e9df67995bf1ee2e2eeba3a36"
+    }
+  },
+  "model": {
+    "model": "sentence-transformers/all-MiniLM-L6-v2",
+    "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "dimension": 384,
+    "max_length": 256,
+    "pooling": "attention-mask mean pooling from original SentenceTransformer modules",
+    "dtype": "float32",
+    "normalized": true,
+    "sha256": {
+      "1_Pooling/config.json": "4be450dde3b0273bb9787637cfbd28fe04a7ba6ab9d36ac48e92b11e350ffc23",
+      "config.json": "953f9c0d463486b10a6871cc2fd59f223b2c70184f49815e7efbcab5d8908b41",
+      "config_sentence_transformers.json": "061ca9d39661d6c6d6de5ba27f79a1cd5770ea247f8d46412a68a498dc5ac9f3",
+      "data_config.json": "32edcb108fc2516b920734a862ae0692bcae1c5d45d5f8d972cb0d53434a4c54",
+      "model.safetensors": "53aa51172d142c89d9012cce15ae4d6cc0ca6895895114379cacb4fab128d9db",
+      "modules.json": "84e40c8e006c9b1d6c122e02cba9b02458120b5fb0c87b746c41e0207cf642cf",
+      "sentence_bert_config.json": "fc1993fde0a95c24ec6c022539d41cf6e2f7c9721e5415d6fb6897472a9cd4b7",
+      "special_tokens_map.json": "303df45a03609e4ead04bc3dc1536d0ab19b5358db685b6f3da123d05ec200e3",
+      "tokenizer.json": "be50c3628f2bf5bb5e3a7f17b1f74611b2561a3a27eeab05e5aa30f411572037",
+      "tokenizer_config.json": "acb92769e8195aabd29b7b2137a9e6d6e25c476a4f15aa4355c233426c61576b",
+      "vocab.txt": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3"
+    }
+  },
+  "trials": 5,
+  "limit": null,
+  "queries": null,
+  "document_repeat": 1,
+  "workload_kind": "real_unique_documents",
+  "timestamp_utc": "2026-11-01T06:49:13.906815+00:00",
+  "cold_definition": "First model load + first pipeline in fresh configuration process; OS disk cache not flushed",
+  "warm_definition": "Resident model, repeat full document embedding and index build; no reused embeddings",
+  "single_query_definition": "Sequential requests with zero DataLoader workers, same device/model; includes tokenization and transfers",
+  "ram_definition": "20ms sampled process-tree RSS; shared pages may be counted more than once",
+  "faiss_backend": "CPU IndexFlatIP",
+  "search_backend": "faiss_cpu",
+  "source_sha256": {
+    "retrieval.py": "1024e15efaf165e17405b951bf4b26e622de964af81f87613d421eb66f6bebe8",
+    "src\\__init__.py": "c764ebae8718a74c8c7cf6c470dfa4573cafaf05f33a0d7277f9e8ca8895c1a6",
+    "src\\benchmarking.py": "ab01f8ab346bf6e1551e6f83aa5752ab054b0b325880e20efc282caefaa30fb4",
+    "src\\common.py": "f1d421b592d1a4142c54dda68c31b354669037fec58f39b0d6806e0ae58179e3",
+    "src\\data_loader.py": "92d941a34f40319ac869c0ba8cf50ade5429b85d7ab9e55b806783515154deb2",
+    "src\\embeddings.py": "e1d3438d77ec2b2e5e4125ec282587c02414e65169d0443e3aa052f26d001c04",
+    "src\\evaluation.py": "c867b5b4daa9feb22743aa0a61b3b9a8dfd2355c5ffa9bcd5b2ace1b13b3db9d",
+    "src\\hardware_info.py": "514e2616ca8ba4d9f9a6a7901c627c6619e9d1a92a1a797e0dcbb2a98ad15ae1",
+    "src\\indexing.py": "e2cf076c191b74ed80f4089c105f3123ea968c05eeb76f226953db04f7febecc",
+    "src\\plotting.py": "56333a8bd035d13ad1e17674949780235dbce0b193e466d72f99cfc5d572c7c9",
+    "src\\preprocessing.py": "20ce5d26a6f071fc4cc75bf05a32939282770278bc6307be38d6d1c257364f70",
+    "src\\reporting.py": "7ef5d4e3bc8e1ae2f68885769524e93fe77c5462132aa95e0511623d8e50792b",
+    "src\\retrieval_engine.py": "373ebb97d8e79aa8bc478d13536c673a3e1b0d9d1f44931ac4e06f60bbbcd6bb",
+    "src\\runtime.py": "6cedae2001bef84d48864d1471384db572b553c91e1de0fa7a584ced81214cd4",
+    "src\\tokenization.py": "d63070a5604b0d5e80107c46ce33aa23d686c47d3b899eb3206ac5febbc78bb5",
+    "configs\\parallel_cpu.yaml": "418d658a5f5d876a24483f05460b5b3d2a5a69e3c5ea8c8b3ab2ef04f9d9c298",
+    "configs\\parallel_gpu.yaml": "b7e30dc0ec7a5857eecc3c5572ac9b4f4d5e8b1e3b0244751e4034ce35d58609",
+    "configs\\serial_cpu.yaml": "414353fc7a42d56b8f4ba7b121f54cad49cb45cf72c9547eef872011247ad73f"
+  },
+  "status": "complete",
+  "completed_trials": 5,
+  "thread_limits_after_model_load": {
+    "environment": {
+      "OMP_NUM_THREADS": "4",
+      "MKL_NUM_THREADS": "4",
+      "OPENBLAS_NUM_THREADS": "4",
+      "NUMEXPR_NUM_THREADS": "4",
+      "VECLIB_MAXIMUM_THREADS": "4",
+      "BLIS_NUM_THREADS": "4"
+    },
+    "torch_threads": 4,
+    "torch_interop": 1,
+    "faiss_threads": 4,
+    "pools": [
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "num_threads": 4,
+        "prefix": "libscipy_openblas",
+        "filepath": "C:\\Users\\Kushi KKS\\MAP\\.venv-rag\\Lib\\site-packages\\numpy.libs\\libscipy_openblas64_-63c857e738469261263c764a36be9436.dll",
+        "version": "0.3.31.188.0",
+        "threading_layer": "pthreads",
+        "architecture": "Haswell"
+      },
+      {
+        "user_api": "openmp",
+        "internal_api": "openmp",
+        "num_threads": 4,
+        "prefix": "vcomp",
+        "filepath": "C:\\Users\\Kushi KKS\\MAP\\.venv-rag\\Lib\\site-packages\\faiss_cpu.libs\\VCOMP140.DLL",
+        "version": null
+      },
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "num_threads": 4,
+        "prefix": "libopenblas",
+        "filepath": "C:\\Users\\Kushi KKS\\MAP\\.venv-rag\\Lib\\site-packages\\faiss_cpu.libs\\libopenblas.dll",
+        "version": "0.3.30",
+        "threading_layer": "pthreads",
+        "architecture": "Haswell"
+      },
+      {
+        "user_api": "openmp",
+        "internal_api": "openmp",
+        "num_threads": 4,
+        "prefix": "libiomp",
+        "filepath": "C:\\Users\\Kushi KKS\\MAP\\.venv-rag\\Lib\\site-packages\\torch\\lib\\libiomp5md.dll",
+        "version": null
+      },
+      {
+        "user_api": "openmp",
+        "internal_api": "openmp",
+        "num_threads": 1,
+        "prefix": "libiomp",
+        "filepath": "C:\\Users\\Kushi KKS\\MAP\\.venv-rag\\Lib\\site-packages\\torch\\lib\\libiompstubs5md.dll",
+        "version": null
+      },
+      {
+        "user_api": "openmp",
+        "internal_api": "openmp",
+        "num_threads": 4,
+        "prefix": "vcomp",
+        "filepath": "C:\\Users\\Kushi KKS\\MAP\\.venv-rag\\Lib\\site-packages\\sklearn\\.libs\\vcomp140.dll",
+        "version": null
+      },
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "num_threads": 4,
+        "prefix": "libscipy_openblas",
+        "filepath": "C:\\Users\\Kushi KKS\\MAP\\.venv-rag\\Lib\\site-packages\\scipy.libs\\libscipy_openblas-64eda39e79589aedb16f58e5547eb599.dll",
+        "version": "0.3.30",
+        "threading_layer": "pthreads",
+        "architecture": "Haswell"
+      }
+    ]
+  },
+  "oom_events": [],
+  "effective_loader_workers": 3,
+  "loader_worker_adjustments": [
+    {
+      "requested": 4,
+      "effective": 3,
+      "available_ram_bytes": 3574603776,
+      "reason": "Windows spawn memory budget: 1 GiB reserve + 768 MiB per worker"
+    }
+  ],
+  "hardware_after": {
+    "os": "Windows-10-10.0.26200-SP0",
+    "cpu": "13th Gen Intel(R) Core(TM) i9-13900H",
+    "physical_cores": 14,
+    "logical_cores": 20,
+    "ram_total_bytes": 16780304384,
+    "ram_available_bytes": 3225153536,
+    "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+    "python_executable": "C:\\Users\\Kushi KKS\\MAP\\.venv-rag\\Scripts\\python.exe",
+    "packages": {
+      "torch": "2.11.0+cu128",
+      "sentence-transformers": "6.2.0",
+      "transformers": "5.22.1",
+      "faiss-cpu": "1.15.1",
+      "numpy": "2.4.6",
+      "psutil": "7.2.2",
+      "scipy": "1.17.1",
+      "tokenizers": "0.23.3",
+      "huggingface-hub": "2.4.0"
+    },
+    "cuda_runtime": "12.8",
+    "cuda_available": true,
+    "nvidia_smi": "name, driver_version, memory.total [MiB], temperature.gpu, utilization.gpu [%], power.draw [W]\nNVIDIA GeForce RTX 4050 Laptop GPU, 581.80, 6141 MiB, 64, 11 %, 13.27 W",
+    "ac_power": true,
+    "git_commit": null,
+    "faiss_gpu_api_available": false,
+    "faiss_compile_options": "",
+    "gpu": "NVIDIA GeForce RTX 4050 Laptop GPU",
+    "vram_bytes": 6438780928,
+    "cuda_computation_sum": 499500
+  },
+  "search_effective_chunk_size": 1024,
+  "search_oom_events": [],
+  "cold": {
+    "dataset_loading_s": 0.08472839999012649,
+    "preprocessing_s": 0.3176990000065416,
+    "claim_loading_s": 0.0020278000738471746,
+    "document_embedding_s": 67.11330300010741,
+    "index_build_s": 0.007253100164234638,
+    "claim_embedding_s": 53.34245809982531,
+    "search_s": 0.6113756999839097,
+    "end_to_end_s": 121.48010219982825
+  }
+}
